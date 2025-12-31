@@ -14,9 +14,9 @@ public class DoubleClickMouseActions {
     System.setProperty("webdriver,chrome,driver", "C:\\Software\\Selenium Software\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
     WebDriver driver=new ChromeDriver();
     driver.manage().window().maximize();
-    driver.get("https://www.google.com/");
+    driver.get("https://www.google.com/"); //just I need
     WebElement w=driver.findElement(By.xpath("//div[@id=\"SIvCob\"]/text()"));
-    Thread.sleep(2000);
+   
     Actions a=new Actions(driver);
     a.doubleClick(w).perform();
     Thread.sleep(4000);
